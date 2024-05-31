@@ -27,7 +27,7 @@ mongoose.connect(
   console.error("MongoDB connection error:", error);
   process.exit(1); // Exit the process if MongoDB connection fails
 });
-
+express.static.mime.types[".mjs"] = "text/javascript";
 // Serve static files
 app.use("/images", express.static(path.join(__dirname, "public/images")));
 
