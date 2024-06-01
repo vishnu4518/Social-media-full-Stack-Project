@@ -2,11 +2,11 @@
   "name": "api",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
-  "main": "index.js",
+  "type": "commonjs",
+  "main": "index.cjs",
   "scripts": {
-    "dev": "nodemon api/index.js",
-    "start": "node api/index.js",
+    "dev": "nodemon api/index.cjs",
+    "start": "node index.cjs",
     "build": "npm install && npm install --prefix client && npm run build --prefix client"
   },
   "keywords": [],
