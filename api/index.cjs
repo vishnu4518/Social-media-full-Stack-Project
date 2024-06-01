@@ -27,7 +27,7 @@ mongoose.connect(
   console.error("MongoDB connection error:", error);
   process.exit(1); // Exit the process if MongoDB connection fails
 });
-const __dirname = path.resolve();
+// const __dirname = path.resolve();
 app.use(express.static(path.join(__dirname, '/client/build')))
 app.get('*',(req,res)=>{
   res.sendFile(path.join(__dirname, 'client', 'build','index.html'))
